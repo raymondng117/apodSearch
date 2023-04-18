@@ -1,0 +1,219 @@
+.display_img {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+#date_input {
+width: 100%;
+margin-bottom: 10px;
+height: 35px;
+font-size: 25px;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  .modal {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    background: rgba(0,0,0,0.5);
+  
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .img_cover {
+    width: 1200px;
+  }
+
+
+  .modal-content {
+    position: relative;
+  
+    display: flex;
+    align-items: flex-start;
+  
+    padding: 1rem;
+    max-width: 1300px;
+  
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  #Display_container {
+    display: none;
+    grid-template-areas: 
+    'display_img display_img display_title display_title display_title'
+    'display_img display_img display_date display_date display_date'
+    'display_img display_img display_explanation display_explanation display_explanation'
+    'display_img display_img display_explanation display_explanation display_explanation '
+    'display_img display_img save_button save_button save_button'
+    ;
+    border: 2px solid black;
+    padding: 20px;
+    column-gap: 20px;
+  }
+
+  .display_img_block {
+    grid-area: display_img;
+  }
+
+  .display_title_block {
+    grid-area: display_title;
+  }
+
+  .display_date_block {
+    grid-area: display_date;
+  }
+
+  .display_explanation_block {
+    grid-area: display_explanation;
+  }
+
+  .save_button_block {
+    grid-area: save_button;
+  }
+
+  .display_title {
+    font-size: 35px;
+    font-weight: 800;
+  }
+
+  .display_date {
+    font-size: 25px;
+    
+  }
+
+  .display_explanation {
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  #Favorities_block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .record_block {
+    display: none;
+    grid-template-columns: 1fr 3.5fr;
+    grid-template-areas:
+    'fav_img  fav_title'
+    'fav_img  fav_date'
+    'fav_img  del_button';
+    column-gap: 30px;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .fav_img_block {
+    grid-area: fav_img;
+  }
+
+  .fav_title_block {
+    grid-area: fav_title;
+  }
+
+  .fav_date_block {
+    grid-area: fav_date;
+  }
+
+  .del_button_block {
+    grid-area: del_button;
+    
+  }
+
+  .fav_img_block > .display_img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  #date_submit {
+    background-color: blue;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    font-weight: 1000;
+  }
+  
+  .save_button {
+    background-color: blue;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    font-weight: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .save_button:hover {
+    background-color: #fff;
+    color: blue;
+  }
+  
+  .save_button:focus {
+    outline: none;
+    background-color: #fff;
+    color: blue;
+  }
+  
+  .delete-button {
+    background-color: lightcoral;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    font-weight: 800;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #fff;
+    color: lightcoral;
+  }
+  
+  .delete-button:focus {
+    outline: none;
+    background-color: #fff;
+    color: lightcoral;
+  }
+  
